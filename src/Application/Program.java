@@ -38,13 +38,13 @@ public class Program {
         sellerDao.insert(newSeller);
         System.out.println("Inserido: " + newSeller.getId());
 
-        System.out.println("\n=== TEST 5: seller insert =====");
+        System.out.println("\n=== TEST 5: seller update =====");
         seller = sellerDao.findById(1);
         seller.setName("Martha Waine");
         sellerDao.update(seller);
         System.out.println("Update Realizado!");
 
-        System.out.println("\n=== TEST 5: seller insert =====");
+        System.out.println("\n=== TEST 5: seller delete =====");
         System.out.println("Digite um id para deletar no banco: ");
         int id = sc.nextInt();
         sellerDao.deleteById(id);
