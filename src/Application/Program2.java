@@ -50,7 +50,5 @@ public class Program2 {
 
         sc.close();
 
-        sc.close();
-
     }
 }
